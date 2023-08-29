@@ -29,15 +29,15 @@ testRunner.runTests({
       },
       {
         testDescription:
-        'getEmoji should return a message if the input is not an emoji in the list, test 1',
-        evaluationString: 'getEmoji("not an emoji")',
-        expectedValue: "Sorry, I don't know that emoji.",
+        'getEmoji should return `null` if the input is not an emoji in the list, test 1',
+        evaluationString: 'getEmoji("spinosaur")',
+        expectedValue: null,
       },
       {
         testDescription:
-        'getEmoji should return a message if the input is not an emoji in the list, test 2',
-        evaluationString: 'getEmoji("another non-emoji")',
-        expectedValue: "Sorry, I don't know that emoji.",
+        'getEmoji should return `null` if the input is not an emoji in the list, test 2',
+        evaluationString: 'getEmoji("robo t-rex")',
+        expectedValue: null,
       },
     ],
   },
