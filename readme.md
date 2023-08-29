@@ -1,14 +1,37 @@
-# Example bconatr.js Assignment
+# Emojinator 1 - Conditions
 
-An example assignment using the [bconatr.js](https://github.com/abbreviatedman/bconatr-js) library.
+An AnnieCannons project.
 
-### Usage
+### Introduction
 
-1.  Open the `index.html` in a browser, or run a live server for automatic updating. You can run the [NPM live-server package](https://www.npmjs.com/package/live-server) or use a text editor extension, like [VS Code's Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
-2.  Open the dev tools console to see the running tests.
-3.  Try breaking the code in `logic.js` to make tests fail.
-4.  Add new tests in `tests/logic.tests.js` to explore that process.
+We'll be making an **emoji picker app** today: Emojinator. It prompts the user for the name of an emoji, and then prints that out in the dev console. Users can then copy and paste the emoji wherever they'd like!
 
-### Making An Assignment
+In the process, **we'll be learning**:
 
-You can click on "Use this  template" on [the GitHub page for this repo](https://github.com/abbreviatedman/example-bconatr-js-assignment) to easily copy this repository to a new GitHub repo.
+1. How to **leverage a test environment** ([baconatr.js](https://github.com/abbreviatedman/bconatr-js)) to write functions that are **provably correct**.
+2. How to separate our **interface code** from our **business logic**, so that we can change either independently.
+
+You will also get the opportunity to add whichever emojis you want. So that's 🔥.
+
+### Instructions
+
+##### Prep
+
+You'll be mainly working in **2** files, `logic.js` and `interface.js`.
+
+But **before you can start with that**, you'll need to make sure your `index.html` file **executes both of those files**.
+
+1. Add the following line to your `index.html` file:
+
+``` html
+<script src="./logic.js">
+```
+
+This will execute your business logic file whenever the page is loaded in a browser.
+
+2. Next, _after_ the above line, add the following `script` tag to execute your interface code:
+
+``` html
+<script src="./interface.js">
+```
+
