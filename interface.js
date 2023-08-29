@@ -1,11 +1,11 @@
 // Add your interface code below!
 
-const input = prompt("Please enter a description of your emoji.");
+const userWord = prompt("Please enter a description of your emoji.");
 
-const emoji = getEmoji(input);
+const emoji = getEmoji(userWord);
 
-if (emoji === "Sorry, I don't know the emoji.") {
-  console.log();
+if (emoji === null) {
+  console.log("Sorry, I don't know the emoji: " + userWord);
 } else {
   console.log("Your emoji is: " + emoji);
 }

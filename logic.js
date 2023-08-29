@@ -10,7 +10,7 @@ function getEmoji(emojiDescription) {
   } else if (emojiDescription === "star") {
     return "⭐";
   } else {
-    return "Sorry, I don't know that emoji.";
+    return null;
   }
 }
 
@@ -25,6 +25,6 @@ function getEmojiBonusVersion(emojiDescription) {
   if (emojiList[emojiDescription]) {
     return emojiList[emojiDescription];
   } else {
-    return "Sorry, I don't know that emoji.";
+    return null;
   }
 }
