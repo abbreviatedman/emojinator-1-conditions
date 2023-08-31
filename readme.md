@@ -8,7 +8,7 @@ We'll be making an **emoji picker app** today: Emojinator. You can see [the depl
 
 In the process, **we'll be learning**:
 
-1. How to **leverage a test environment** ([baconatr.js](https://github.com/abbreviatedman/bconatr-js)) to write functions that are **provably correct**.
+1. How to **leverage a test environment** ([bconatr.js](https://github.com/abbreviatedman/bconatr-js)) to write functions that are **provably correct**.
 2. How to separate our **interface code** from our **business logic**, so that we can change either independently.
 
 You will also get the opportunity to add whichever emojis you want. So that's 🔥.
