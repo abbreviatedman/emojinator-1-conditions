@@ -61,10 +61,10 @@ If you enter anything else, you'll see a message telling you the app doesn't kno
 2. Open up **the dev console**. You'll note that you are failing the tests. That's okay! You just haven't started yet.
 3. **Add script tags** for `logic.js` and `interface.js` to the HTML. See the steps under Prep above, and the comments in the HTML, if you need guidance.
 4. **Take a look at the tests**. The first one says that the test code is checking your functionality by calling a function called `getEmoji` and passing in `"smile"`, but it's evaluating to `undefined`. The function doesn't exist yet—**our task is to make it**. (Calling a non-existent function should actually be an error, but our test runner is letting you fail tests without crashing the app.)
-5. In `logic.js`, define a `getEmoji` function. You can see from the tests that it's being passed one  argument, a string. Name the parameter whatever you'd like.
+5. In `logic.js`, **define** a `getEmoji` **function**. You can see from the tests that **it's being passed one argument, a string**. Create a parameter so you can get that value—name the parameter whatever you'd like.
 6. The first test checks if `getEmoji("smile")` evaluates to the string `"☺"`. So although **this is definitely not going to solve the whole functionality**, add `return "☺";` into the body of your function.
-7. Go back to the dev console. You should see that you're passing the test!
-8. Now finish the function so that it passes all tests. When the test code calls `getEmoji("frown")`, you'll have to return a frown emoji, and so on. You'll need to be able to return one emoji or another depending on a **condition**. Pay careful attention to what **the tests are telling you**, and ask your colleagues if you're unsure (and an instructor if you can't figure it out together!). This is a new framework for you, but this kind of test-driven code is extremely common in the developer world, so we'll need to learn how to read them!
+7. Go back to **the dev console**. You should see that you're passing the test!
+8. Now **finish the function** so that it **passes all tests**. When the test code calls `getEmoji("frown")`, you'll have to return a frown emoji, and so on. You'll need to be able to **return** one emoji or another depending on a **condition**. Pay careful attention to **what the tests are telling you**, and ask your colleagues if you're unsure (and an instructor if you can't figure it out together!). This is a new framework for you, but this kind of test-driven code is **extremely common** in the developer world, so we'll need to **learn how to read them**!
 9. Once you have all tests passing, feel free to go back and "refactor" your code, so that it's readable, clear, and not overly long. Remove any logging statements you added during development. It's time to get ready for production and **create an interface**!
 
 ###### Part 2: Interface
@@ -73,14 +73,14 @@ There are no tests for the interface. Part of the reason for separating logic fr
 
 However, the interface for this assignment is quite simple. We've written this code before!
 
-1. Make sure there's a script tag for `interface.js` linked in `index.html`, and that it's **below logic.js**.
-2. OPTIONALLY: comment out the script tag for the test file, `tests/logic.tests.js`. This will make it easier to read your console, since it won't have test output in it. If you do this, **make sure** that you are passing all the tests first, _and_ that you **run the tests again when you're done** with the interface, so you can confirm it all still works.
-3. Prompt the user for what emoji they want (they should enter "smile" or "frown" or "heart" or "star"). Save that value in a variable.
-4. That string is _exactly_ what `getEmoji` is designed to take in as an argument. Even though it's not in this file, we still have access to it, so call the function, passing in the value you got from the user. Save what that all evaluates to in a new variable (very similarly to what you did with the `prompt` function).
-5. Log a message such as "Your emoji is: " or, "Here's your emoji!" or "Emojinator has found you the following emoji: " or whatever you'd like, along with the value you got back from `getEmoji`. If you passed the tests in the previous steps, that should be the right emoji!
-6. Final step: handle the case that they typed in "spinosaur" or some other words that we don't have emojis for. You'll know that they did so because `getEmoji` will return `null`. Check if the value you got back is `null`, and if it is, log to the console a message telling them that's not an emoji we have on our list (in whatever way you want to say it!).
-7. **You should only log one message or another.** In other words, be sure that when you type a valid emoji word, you get the emoji and _not_ the message that we don't have that emoji. And when you type in "colin", you should only see the message about an invalid emoji, and _not_ a message attempting to give them an emoji we don't have.
-8. If you're getting the right messages back, you've done it! You're done! You made an app. It might be a console-based app, but it's an app nonetheless.
+1. Make sure there's a **script tag** for `interface.js` linked in `index.html`, and that it's **below logic.js**.
+2. OPTIONALLY: **comment out the script tag for the test file**, `tests/logic.tests.js`. This will make it easier to read your console, since it won't have test output in it. If you do this, **make sure** that you are **passing all the tests first**, _and_ that you **run the tests again when you're done** with the interface, so you can confirm it all still works.
+3. **Prompt the user** for what emoji they want (they should enter "smile" or "frown" or "heart" or "star"). **Save that value** in a variable.
+4. That string is _exactly_ what `getEmoji` is designed to take in as an argument. Even though it's not in this file, we still have access to it, so **call the function**, passing in the value you got from the user. Save what that all evaluates to in **a new variable** (very similarly to what you did with the `prompt` function).
+5. **Log a message** such as "Your emoji is: " or, "Here's your emoji!" or "Emojinator has found you the following emoji: " or whatever you'd like, **along with the value** you got back from `getEmoji`. If you passed the tests in the previous steps, that should be the right emoji!
+6. Final step: **handle the case** that they typed in "spinosaur" or some other words that **we don't have emojis for**. You'll know that they did so because `getEmoji` will return `null`. Check if the value you got back is `null`, and **if** it is, **log to the console** a message telling them that's _not_ an emoji we have on our list (in whatever way you want to say it!).
+7. **You should only log one message or another.** In other words, be sure that when you type a valid emoji word, you get _the emoji_, and _not_ the message that we don't have that emoji. And when you type in "colin", you should _only_ see the message about an invalid emoji, and _not_ a message attempting to give them an emoji we don't have.
+8. If you're getting the right messages back, **you've done it**! You're done! You made an app. It might be a console-based app, but **it's an app** nonetheless.
 
 ###### Part 3: Stretch?
 
