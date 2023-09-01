@@ -88,4 +88,6 @@ There are some things you can do to improve the app's functionality and code qua
 
 - Add more emojis! You can add as many as you'd like. You'll need to add them to the `getEmoji` function, but you _won't_ need to add them to the interface code, since the interface code is just calling `getEmoji` and doesn't care what it returns.
 - Make the app case-insensitive. Right now, if you type "Smile" or "SMILE" or "sMiLe", it won't work. But it would be nice if it did!
+- Allow for more than one word for each emoji. For example, "smile" and "happy" could both return the smile emoji. This will require you to change the `getEmoji` function, but _not_ the interface code, since the interface code is just calling `getEmoji`. For this, you will need to use a logical operator, such as `||` or `&&`!
+- When the user types in an invalid emoji, give them a list of valid emojis to choose from, with their matching words.
 - Refactor the `getEmoji` function to use something other than the conditional code you used. For example, you could use a `switch` statement, or you could use an object with keys and values. (If you're not sure what that means, ask your colleagues or an instructor!) For this goal, make sure to run the tests, so that you know you're still passing them.
